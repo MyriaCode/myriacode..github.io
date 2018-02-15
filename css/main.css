@@ -1,0 +1,220 @@
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+body, h1, h2 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero {
+    background-color: #ff007a;
+    background-image: url('/img/theme/backgrounds/hero-background-woman-face-hd.png'),
+        url('/img/theme/backgrounds/hero-background-man-face-hd.png');
+    background-position: -115% bottom, 205% bottom;
+    background-size: 70%, 70%;
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        background-image: url('/img/theme/backgrounds/hero-background-woman-face-full.png'),
+            url('/img/theme/backgrounds/hero-background-man-face-full.png');
+        background-position: -75% center, 165% center;
+        background-size: 60%, 60%;
+    }
+}
+
+.hero-content {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+@media (min-height: 960px) {
+    .hero-content {
+        top: 100px;
+    }
+}
+
+@media (min-width: 960px) {
+    .hero-content {
+        bottom: 0;
+        top: auto;
+    }
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+@media (min-width: 480px) {
+    .hero-title {
+        font-size: 5rem;
+    }
+}
+
+.logo {
+    margin-top: -40px;
+    width: 150px;
+}
+
+.hero-subtitle {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 480px) {
+    .hero-subtitle {
+        margin-bottom: 6rem;
+    }
+}
+
+.hero-buttons {
+    margin-bottom: 10rem;
+}
+
+.button.button-hero-left {
+    border-color: #fff;
+    color: #fff;
+    min-width: 15rem;
+}
+
+.button.button-hero-left:focus, .button.button-hero-left:hover {
+    background-color: #fff;
+    color: #ff007a;
+}
+
+.button.button-hero-right {
+    border-color: #fcee21;
+    color: #fcee21;
+    min-width: 15rem;
+}
+
+.button.button-hero-right:focus, .button.button-hero-right:hover {
+    background-color: #fcee21;
+    color: #ff007a;
+}
+
+.hero-more {
+    bottom: 0;
+    color: #fff;
+    font-size: 4rem;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transition: background-color 500ms, color 500ms;
+}
+
+.hero-more:focus, .hero-more:hover {
+    color: #0000ff;
+}
+
+/* ==========================================================================
+   Content sections
+   ========================================================================== */
+
+.hsection {
+    color: #00f;
+    padding: 11rem 0;
+}
+
+.section-join {
+    background: #e4e4e4;
+}
+
+.section-contact {
+    background: #d5d5db;
+}
+
+/* ==========================================================================
+   Common content styles
+   ========================================================================== */
+
+.section-title {
+    color: #00f;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+.cta-word {
+    border-bottom: 0.5rem solid #ff007a;
+}
+
+.lead {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.underlined {
+    color: #ff007a;
+    text-decoration: underline;
+}
+
+.underlined span {
+    color: #00f;
+}
+
+.button {
+    background: transparent;
+    border-color: #ff007a;
+    border-radius: 5rem;
+    border-style: solid;
+    border-width: 2px;
+    color: #0000ff;
+    font-family: 'Space Mono', sans-serif;
+    margin: 1rem 2rem;
+    min-width: 13rem;
+    padding: 0.75rem 0;
+    transition: background-color 500ms, color 500ms;
+}
+
+.button-gradient {
+    background: linear-gradient(to right, #ff007a, #fcee21);
+    border-width: 0;
+    padding: 2px;
+}
+
+.button-content {
+    background: #fff;
+    border-radius: 5rem;
+    display: block;
+    padding: 0.75rem 0;
+    transition: background-color 500ms;
+}
+
+.section-join .button-content {
+    background: #e4e4e4;
+}
+
+.section-contact .button-content {
+    background: #d5d5db;
+}
+
+.button-content:focus, .button-content:hover {
+    background-color: #ff007a;
+}
+
+.button:focus, .button:hover {
+    background-color: #ff007a;
+    color: #fff;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+    background: #0000ff;
+    color: #fff;
+    padding: 9rem 0;
+}
